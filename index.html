@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Title</title>
+    <title>les formulaires</title>
 </head>
 <body>
 <section>
@@ -15,38 +15,75 @@
         <div>
             <label for="firstName">Prénom:</label>
             <input type="text" id="firstName" name="firstName" placeholder="prénom">
+            <div>
+                <span class="erreur"></span>
+            </div>
             <label for="lastName">Nom:</label>
             <input type="text" id="lastName" name="lastName" placeholder="Nom">
+            <div>
+                <span></span>
+            </div>
         </div>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Age">
         <div>
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" placeholder="Age">
-            <label for="sex">Sexe:</label>
+            <span></span>
         </div>
+
+        <label for="sex">Sexe:</label>
+
         <select id="sex" name="sex">
-            <option value="male" selected>Male</option>
+            <option value="">selectionner un genre</option>
+
+            <option value="male">Male</option>
             <option value="female">Female</option>
-            <option value="other">autre</option>
+
         </select>
+        <div>
+            <span></span>
+        </div>
+
         <label for="email">Adresse Email :</label>
         <input type="email" id="email" name="email"
                title="Veuillez entrer une adresse email valide" placeholder="Email">
+        <div>
+            <span></span>
+        </div>
+
         <label for="postalAddress">Adresse postale :</label>
         <input type="text" id="postalAddress" name="postalAddress" placeholder="Adresse postal">
+        <div>
+            <span></span>
+        </div>
+
         <label for="postalCode">Code postal :</label>
         <input type="text" id="postalCode" name="postalCode" pattern="[0-9]{5}"
                title="Le code postal doit être composé de 5 chiffres" placeholder="Code postal">
+        <div>
+            <span></span>
+        </div>
+
         <label for="ville">Ville :</label>
         <input type="text" id="ville" name="ville" placeholder="Ville">
+        <div>
+            <span></span>
+        </div>
+
         <label for="job">Métier exercé:</label>
         <select id="job" name="job">
+            <option value="">selectionner un metier</option>
             <option value="developer">Développeur</option>
             <option value="designer">Designer</option>
             <option value="manager">Manager</option>
             <option value="pdg">pdg</option>
             <option value="stagiaire">Stagiaire</option>
-            <option value="autre" selected>autre</option>
+
         </select>
+        <div>
+            <span></span>
+        </div>
+
         <label for="nationality">Nationalité:</label>
         <select id="nationality" name="nationality">
             <option value="france" selected>Française</option>
@@ -55,20 +92,48 @@
             <option value="allemand">allemand</option>
             <option value="italien">italien</option>
         </select>
+        <div>
+            <span></span>
+        </div>
+
         <label for="birthDate">Date de naissance :</label>
         <input type="date" id="birthDate" name="birthDate">
+        <div>
+            <span></span>
+        </div>
+
         <label for="birthCountry">Pays de naissance :</label>
         <input type="text" id="birthCountry" name="birthCountry" placeholder="Pays de naissance">
+        <div>
+            <span></span>
+        </div>
+
         <label for="socialSecurityNumber">Numéro de sécurité social :</label>
         <input type="text" id="socialSecurityNumber" name="socialSecurityNumber"
                placeholder="Numéro de sécurité social">
+        <div>
+            <span></span>
+        </div>
+
         <label for="passportNumber">Numéro du passeport:</label>
         <input type="text" id="passportNumber" name="passportNumber" placeholder="Numéro du passeport">
         <div>
+            <span></span>
+        </div>
+
+        <div>
             <label for="passportIssueDate">Date de délivrance du passeport :</label>
             <input type="date" id="passportIssueDate" name="passportIssueDate">
+            <div>
+                <span></span>
+            </div>
+
             <label for="passportExpiryDate">Date de validité du passeport:</label>
             <input type="date" id="passportExpiryDate" name="passportExpiryDate">
+            <div>
+                <span></span>
+            </div>
+
         </div>
         <button type="submit">Envoyer</button>
     </form>
