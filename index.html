@@ -2,9 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Title</title>
 </head>
 <body>
+<section>
 
+
+    <form>
+        <h1>Formulaire d'inscription</h1>
+        <div>
+            <label for="firstName">Prénom:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="prénom">
+            <label for="lastName">Nom:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Nom">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age">
+            <label for="sex">Sexe:</label>
+        </div>
+        <select id="sex" name="sex">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">autre</option>
+        </select>
+        <label for="email">Adresse Email :</label>
+        <input type="email" id="email" name="email"
+               title="Veuillez entrer une adresse email valide" placeholder="Email">
+        <label for="postalAddress">Adresse postale :</label>
+        <input type="text" id="postalAddress" name="postalAddress" placeholder="Adresse postal">
+        <label for="postalCode">Code postal :</label>
+        <input type="text" id="postalCode" name="postalCode" pattern="[0-9]{5}"
+               title="Le code postal doit être composé de 5 chiffres" placeholder="Code postal">
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" placeholder="Ville">
+        <label for="job">Métier exercé:</label>
+        <select id="job" name="job">
+            <option value="developer">Développeur</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+            <option value="pdg">pdg</option>
+            <option value="stagiaire">Stagiaire</option>
+            <option value="autre" selected>autre</option>
+        </select>
+        <label for="nationality">Nationalité:</label>
+        <select id="nationality" name="nationality">
+            <option value="france" selected>Française</option>
+            <option value="usa">Américaine</option>
+            <option value="uk">Britannique</option>
+            <option value="allemand">allemand</option>
+            <option value="italien">italien</option>
+        </select>
+        <label for="birthDate">Date de naissance :</label>
+        <input type="date" id="birthDate" name="birthDate">
+        <label for="birthCountry">Pays de naissance :</label>
+        <input type="text" id="birthCountry" name="birthCountry" placeholder="Pays de naissance">
+        <label for="socialSecurityNumber">Numéro de sécurité social :</label>
+        <input type="text" id="socialSecurityNumber" name="socialSecurityNumber"
+               placeholder="Numéro de sécurité social">
+        <label for="passportNumber">Numéro du passeport:</label>
+        <input type="text" id="passportNumber" name="passportNumber" placeholder="Numéro du passeport">
+        <div>
+            <label for="passportIssueDate">Date de délivrance du passeport :</label>
+            <input type="date" id="passportIssueDate" name="passportIssueDate">
+            <label for="passportExpiryDate">Date de validité du passeport:</label>
+            <input type="date" id="passportExpiryDate" name="passportExpiryDate">
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+
+</section>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
