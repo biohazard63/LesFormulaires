@@ -4,7 +4,11 @@ body {
     margin: 0;
     padding: 0;
 }
+h1{
+    text-align: center;
+    margin-bottom: 20px;
 
+}
 section {
     display: flex;
     justify-content: center;
@@ -17,7 +21,7 @@ form {
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
 }
 
 form label {
@@ -32,7 +36,7 @@ form input[type="number"],
 form input[type="email"],
 form input[type="date"],
 form select {
-    width: 90%;
+    width: 35%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -59,6 +63,18 @@ form button:hover {
     font-weight: bold;
     display: block;
     margin-bottom: 15px;
+}
+
+.coteacote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-right: 5px;
+}
+.cote{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 @media (max-width: 600px) {
     form {
